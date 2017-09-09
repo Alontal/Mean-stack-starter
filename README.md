@@ -1,5 +1,7 @@
-#cms for Haifa3D based on mean stack App
-*forked from mean.js  
+# cms for Haifa3D 
+## mean stack 
+
+*forked from https://github.com/meanjs/mean
 
 ## Installation
 1. Download the repository
@@ -10,7 +12,6 @@
 
 Use this starter kit to build any MEAN stack application you like.
 
-If you have any questions or requests, email us at [chris@scotch.io](mailto:chris@scotch.io) and we'll keep updating this to make it perfect.
 
 ## Future Additions
 - CRUD examples
