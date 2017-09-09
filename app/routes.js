@@ -6,6 +6,8 @@ module.exports = function(app) {
 	// handle things like api calls
 
    app.get('/api/demo', api.getall);
+
+
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function(req, res) {
