@@ -1,7 +1,7 @@
 # cms for Haifa3D 
 ## mean stack 
 
-*forked from https://github.com/meanjs/mean
+*forked from https://github.com/scotch-io/starter-node-angular/blob/master/README.md
 
 ## Installation
 1. Download the repository

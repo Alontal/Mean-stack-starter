@@ -1,11 +1,18 @@
 // grab the mongoose module
 var mongoose = require('mongoose');
-//Define a schema
+
+//Define S to hold all schemas
+var S = {};
+
+//Define user schema
 var userSchema = mongoose.Schema({
 	name: {type: String, default:'empty'},
 	family: {type: String, default:'empty'},
 });
-module.exports = mongoose.model('users', userSchema, "myCollection");
+S.users = mongoose.model('users', userSchema, "myCollection"); //add user shecma to S
+
+//return S as all schemas we define 
+module.exports = S;
 
 // define our nerd model
 // module.exports allows us to pass this to other files when it is called
