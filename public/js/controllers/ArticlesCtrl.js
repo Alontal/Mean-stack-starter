@@ -3,9 +3,7 @@ angular.module('ArticlesCtrl', [])
 	function ($scope, http) {
 		//define helpers
 
-		getDemo();
-		function getDemo() {
-			http.getCustomer('alon')
+			http.getCustomer('shani')
 				.then(function (res) {
 					$scope.user = res.data;
 				}, function (error) {
@@ -18,7 +16,5 @@ angular.module('ArticlesCtrl', [])
 				}, function (error) {
 					$scope.api = 'Unable to load all users: ' + error.message;
 				});
-		}
-
 
 	});

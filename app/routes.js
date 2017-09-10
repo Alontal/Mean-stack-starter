@@ -8,8 +8,11 @@ module.exports = function (app) {
 	app.get('/api/demo', api.getall);
 
 	app.get('/api/demo/:name', function (req, res) {
-		console.log(req.params.name);
-		res.json(api.getbyName(req.params.name));
+
+		console.log('name requested is: ' + JSON.stringify(req.params.name));
+		var u = api.getbyName(req,res,req.params.name);
+		console.log('found: '+ JSON.stringify(u));
+		res.send(u);
 	});
 
 	// frontend routes =========================================================
