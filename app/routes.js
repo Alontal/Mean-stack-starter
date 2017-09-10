@@ -5,10 +5,11 @@ module.exports = function (app) {
 	// authentication routes
 	// handle things like api calls
 
+	//get all users
 	app.get('/api/demo', api.getall);
 
+	//get user by name api
 	app.get('/api/demo/:name', function (req, res) {
-
 		console.log('name requested is: ' + JSON.stringify(req.params.name));
 		var u = api.getbyName(req,res,req.params.name);
 		console.log('found: '+ JSON.stringify(u));
