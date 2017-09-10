@@ -14,9 +14,9 @@ angular.module('appRoutes', [])
 			controller: 'ArticlesController'
 		})
 
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
+		.when('/posts', {
+			templateUrl: 'views/posts.html',
+			controller: 'PostsController'	
 		});
 
 	$locationProvider.html5Mode(true);

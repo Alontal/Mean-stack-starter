@@ -15,7 +15,10 @@ module.exports = function (app) {
 		console.log('found: '+ JSON.stringify(u));
 		res.send(u);
 	});
-
+	
+	app.get('/404', function (req, res) {
+		res.send('404');
+	});
 	// frontend routes =========================================================
 	// route to handle all angular requests
 	app.get('*', function (req, res) {

@@ -5,7 +5,7 @@ angular.module('sampleApp',
  'MainCtrl', 
  'ArticlesCtrl', 
  'HttpService', 
- 'GeekCtrl',
- 'GeekService'
+ 'PostsCtrl',
+ 'PostsService'
 
 ]);
