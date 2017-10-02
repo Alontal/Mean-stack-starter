@@ -1,9 +1,22 @@
 const api = require('./models/usersApi');
+const util = require('./models/util');
+const fb = require('./models/fb');
 
 module.exports = function (app) {
 	// server routes ===========================================================
 	// authentication routes
 	// handle things like api calls
+
+
+	app.get('/api/fb-messanger/:msg', function(req,res){
+		console.log(req.params);
+		util.logger(req.params.msg);
+
+
+		res.send('i got this from client: '+ req.params.msg);
+	})
+
+
 
 	//get all users
 	app.get('/api/demo', api.getall);

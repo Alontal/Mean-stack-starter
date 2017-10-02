@@ -1,5 +1,8 @@
 <div class="jumbotron text-center">
-	<h1>Posts 	</h1>
-
+	<h1>Facebook messanger 	</h1>
 	<p>{{ tagline }}</p>
+	<input type="text" placeholder="enter message" ng-model="msg"/>
+	<code ng-bind="msg"></code>
+	<button ng-click="send_message(msg)" /> </button>
+	 
 </div>
