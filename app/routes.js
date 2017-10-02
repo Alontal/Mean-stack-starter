@@ -11,7 +11,7 @@ module.exports = function (app) {
 	app.get('/api/fb-messanger/:msg', function(req,res){
 		console.log(req.params);
 		util.logger(req.params.msg);
-
+		fb.test();
 
 		res.send('i got this from client: '+ req.params.msg);
 	})
