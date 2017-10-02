@@ -8,7 +8,7 @@ module.exports = function (app) {
 	// handle things like api calls
 
 
-	app.get('/api/fb-messanger/:msg', function(req,res){
+	app.get('/api/fb-messenger/:msg', function(req,res){
 		console.log(req.params);
 		util.logger(req.params.msg);
 		fb.test();

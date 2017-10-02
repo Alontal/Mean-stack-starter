@@ -13,7 +13,7 @@ angular.module('HttpService', [])
 		};
 		//call fb api on server
 		H.fbSendMsg  = function(msg){
-			return $http.get('/api/fb-messanger/' + msg)
+			return $http.get('/api/fb-messenger/' + msg)
 		}
 
 		H.insertCustomer = function (cust) {

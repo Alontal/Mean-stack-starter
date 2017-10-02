@@ -1,7 +1,7 @@
 angular.module('PostsCtrl', [])
 	.controller('PostsController', function ($scope, http) {
 
-		$scope.tagline = 'Lets send cool messanger msg!';
+		$scope.tagline = 'Lets send cool messenger msg!';
 		//send msg func
 		$scope.send_message = function(msg){
 			console.log(msg);
