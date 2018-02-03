@@ -1,5 +1,5 @@
-# cms for Haifa3D 
-## mean stack 
+ 
+# mean stack app 
 
 *forked from https://github.com/scotch-io/starter-node-angular/blob/master/README.md
 
